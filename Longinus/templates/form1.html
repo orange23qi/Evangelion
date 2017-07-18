@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap页面样例</title>
+    
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap_noresponsive.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/html5shiv.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部 -->
+    <header>
+        <div class="navbar navbar-black">
+            <div class="navbar-container">
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-leaf"></i>
+                        bootstrap
+                    </a>
+                </div>
+                
+                <div class="navbar-header pull-right">
+                    <ul class="nav">
+                        <li class="user-info">
+                            <a href="#">
+                                <img class="img-rounded" src="img/avatar.png">
+                                <span>admin</span>
+                            </a>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部 -->
+
+    <!-- 侧边栏 -->
+    <div class="king-vertical-nav4">
+        <div class="sidebar-inner">
+            <ul class="navi">
+                <li class="current">
+                    <a href="index.html">
+                        <i class="fa fa-gear"></i>首页
+                    </a>
+                </li>
+                <li class="has_submenu current open">
+                    <a href="javascript:;">
+                        <i class="fa fa-wrench"></i>表单
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="active">
+                            <a href="form1.html">表单一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form2.html">表单二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form3.html">表单三<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-tasks"></i>表格
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="table1.html">表格一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="table2.html">表格二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-ellipsis-h"></i>其他
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="blank.html">空白<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="king-main-container">
+        <div class="container-fluid">
+            <div class="panel panel-default panel-edit">
+                <div class="panel-heading">
+                    进程属性编辑
+                </div>
+                <div class="panel-body">
+                    <!-- 属性编辑栏 [[-->
+                    <div class="line">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">唯一属性</a> 
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <form class="form-horizontal">
+
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>FuncID：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="FuncID">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>FuncName：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="FuncName">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncName是什么？"></button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 属性编辑栏 ]]-->
+                    <!-- 属性编辑栏 [[-->
+                    <div class="line">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">基本属性</a> 
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <form class="form-horizontal">
+
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>ProcName：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>WorkPath：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>User：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>默认启动数量：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label">进程优先级：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label">优先级作用域：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label">进程分组名称：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label">进程类型：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 属性编辑栏 ]]-->
+                    <!-- 属性编辑栏 [[-->
+                    <div class="line">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">进程起停属性</a> 
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <form class="form-horizontal">
+                                    <!-- 如需增加，请复制form-group节点 -->
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>进程启动命令：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>进程停止命令：</label>
+                                        <div class="control-input">
+                                            <input type="text" class="form-control" id="inputCount3" placeholder="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncName是什么？"></button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 属性编辑栏 ]]-->
+                    <!-- 属性编辑栏 [[-->
+                    <div class="line">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">唯一属性</a> 
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <form class="form-horizontal">
+                                    <!-- 如需增加，请复制form-group节点 -->
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>AutoRestart：</label>
+                                        <div class="control-input">
+                                            <input class="input-checkbox" type="checkbox" value="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCount3" class="control-label"><span>*</span>AutoStart：</label>
+                                        <div class="control-input">
+                                            <input class="input-checkbox" type="checkbox" value="">
+                                        </div>
+                                        <div class="control-hint">
+                                            <button type="button" class="hint" data-container="body" data-toggle="popover" data-placement="right" data-content="FuncID是什么？"></button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 属性编辑栏 ]]-->
+                </div>
+                <div class="panel-footer">
+                    <a class="king-btn king-primary" title="保存">保存</a>
+                    <a class="king-btn king-default" title="返回进程列表">返回进程列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+
+<script src="https://magicbox.bkclouds.cc/static_api/v3/bk/js/bk.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>

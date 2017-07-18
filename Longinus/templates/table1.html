@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap页面样例</title>
+    
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap_noresponsive.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/html5shiv.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部 -->
+    <header>
+        <div class="navbar navbar-black">
+            <div class="navbar-container">
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-leaf"></i>
+                        bootstrap
+                    </a>
+                </div>
+                
+                <div class="navbar-header pull-right">
+                    <ul class="nav">
+                        <li class="user-info">
+                            <a href="#">
+                                <img class="img-rounded" src="img/avatar.png">
+                                <span>admin</span>
+                            </a>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部 -->
+
+    <!-- 侧边栏 -->
+    <div class="king-vertical-nav4">
+        <div class="sidebar-inner">
+            <ul class="navi">
+                <li class="current">
+                    <a href="index.html">
+                        <i class="fa fa-gear"></i>首页
+                    </a>
+                </li>
+                <li class="has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-wrench"></i>表单
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="form1.html">表单一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form2.html">表单二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form3.html">表单三<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has_submenu current open">
+                    <a href="javascript:;">
+                        <i class="fa fa-tasks"></i>表格
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="active">
+                            <a href="table1.html">表格一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="table2.html">表格二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-ellipsis-h"></i>其他
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="blank.html">空白<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="king-main-container">
+        <div class="container-fluid">
+            <div class="panel panel-default pannel-overflow panel-tables">
+                <div class="panel-heading">
+                    <i class="fa fa-list-ul"></i>变量列表
+                </div>
+                <div class="panel-btns">
+                    <a class="king-btn king-radius king-primary" title="添加变量">添加变量</a>
+                    <a class="king-btn king-radius king-default" title="数据导入">数据导入</a>
+                    <a class="king-btn king-radius king-default" title="数据导出">数据导出</a>
+                </div>  
+                <div class="panel-body panel-search-body">
+                    
+                    <div class="panel-content">
+                        <table class="table table-out-bordered table-header-bg table-hover" id="table_demo2">
+                            <thead>
+                            <tr>
+                                <th style="width: 25px"><input type="checkbox" name="checkall" value=""></th>
+                                <th style="width: 10px">FuncID</th>
+                                <th style="width:15%">key</th>
+                                <th style="width:15%">作用域</th>
+                                <th style="width:15%">值</th>
+                                <th>操作</th>                            
+                            </tr>
+                            </thead>
+                            <tbody>
+                            
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>TclsWorldID</td>
+                                <td>s1.*.*.*</td>
+                                <td>abc</td>
+                                <td>
+                                    <button class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                                </td>
+                            </tr>
+                            
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                                <td></td>
+                                <td colspan="7">
+                                    <div class="pull-left">
+                                        <a class="king-btn king-radius king-danger" id="deleteAll" title="删除">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+
+<script src="https://magicbox.bkclouds.cc/static_api/v3/bk/js/bk.js"></script>
+<script src="./js/index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#table_demo2').find('input[name="checkall"]').click(function(){
+            var checked = $(this).prop('checked');
+            $('#table_demo2>tbody input').prop('checked', checked);
+        });
+        $('#table_demo2').find(':checkbox').on('click', function(){
+            if(!this.checked){
+                $('#table_demo2').find('input[name="checkall"]').prop('checked',false);
+            }
+        });
+        $('#table_demo2').find('.glyphicon-remove').parent('button').click(function(){
+            if(confirm('确定要删除？')){
+                $(this).closest('tr').remove();
+            }
+        });
+        $('#deleteAll').click(function(event) {
+            var records = $('#table_demo2>tbody input:checked').closest('tr');
+            if (!records.length){
+                alert('请选择要删除的记录！');
+                return false;
+            }
+            if(confirm('确定要删除？')){
+                records.remove();
+            }
+        });
+    });    
+</script>
+</body>
+</html>

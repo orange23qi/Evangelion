@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap页面样例</title>
+    
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap_noresponsive.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/html5shiv.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部 -->
+    <header>
+        <div class="navbar navbar-black">
+            <div class="navbar-container">
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-leaf"></i>
+                        bootstrap
+                    </a>
+                </div>
+                
+                <div class="navbar-header pull-right">
+                    <ul class="nav">
+                        <li class="user-info">
+                            <a href="#">
+                                <img class="img-rounded" src="img/avatar.png">
+                                <span>admin</span>
+                            </a>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部 -->
+
+    <!-- 侧边栏 -->
+    <div class="king-vertical-nav4">
+        <div class="sidebar-inner">
+            <ul class="navi">
+                <li class="current active">
+                    <a href="index.html">
+                        <i class="fa fa-gear"></i>首页
+                    </a>
+                </li>
+                <li class="has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-wrench"></i>表单
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="form1.html">表单一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form2.html">表单二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="form3.html">表单三<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-tasks"></i>表格
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="table1.html">表格一<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="table2.html">表格二<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last has_submenu">
+                    <a href="javascript:;">
+                        <i class="fa fa-ellipsis-h"></i>其他
+                        <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="blank.html">空白<i class="fa fa-chevron-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="king-main-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <!-- 样例 Start -->
+                    <div class="king-widget1">
+                        <div class="icon-wrap">
+                            <span class="fa-stack king-bg-info">
+                                <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="text-wrap">
+                            <h3>2,354</h3>
+                            <p>
+                                提醒消息
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="sr-only">80% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            同比昨天增长15%
+                        </p>
+                    </div>
+                    <!-- 样例 End -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- 样例 Start -->
+                    <div class="king-widget1">
+                        <div class="icon-wrap">
+                            <span class="fa-stack king-bg-danger">
+                                <i class="fa fa-bell fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="text-wrap">
+                            <h3>1,234</h3>
+                            <p>
+                                警告消息
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                <span class="sr-only">65% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            同比昨天增长5%
+                        </p>
+                    </div>
+                    <!-- 样例 End -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- 样例 Start -->
+                    <div class="king-widget1">
+                        <div class="icon-wrap">
+                            <span class="fa-stack king-bg-success">
+                                <i class="fa fa-cloud-download fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="text-wrap">
+                            <h3>5,214</h3>
+                            <p>
+                                离线消息
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                <span class="sr-only">95% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            同比昨天增长12%
+                        </p>
+                    </div>
+                    <!-- 样例 End -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- 样例 Start -->
+                    <div class="king-widget1">
+                        <div class="icon-wrap">
+                            <span class="fa-stack king-bg-warning">
+                                <i class="fa fa-cloud-download fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="text-wrap">
+                            <h3>5,214</h3>
+                            <p>
+                                警告消息
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                <span class="sr-only">25% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            同比昨天增长12%
+                        </p>
+                    </div>
+                    <!-- 样例 End -->
+                </div>
+            </div>
+
+            <div class="row mt20">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">任务面板</h3>
+                        </div>
+                        <div class="list-group">
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge king-info">just now</span>
+                                <i class="fa fa-calendar"></i> 日历升级
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge king-warning">4 minutes ago</span>
+                                <i class="fa fa-comment"></i> 回复邮件
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge king-danger">23 minutes ago</span>
+                                <i class="fa fa-shopping-cart"></i> 购物车
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge king-primary">46 minutes ago</span>
+                                <i class="fa fa-check"></i> 支付
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge king-success">1 hour ago</span>
+                                <i class="fa fa-user"></i> 添加新用户
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge">2 hours ago</span>
+                                <i class="fa fa-tasks"></i> 任务: "pick up dry cleaning"
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge">yesterday</span>
+                                <i class="fa fa-globe"></i> 保存文件
+                            </a>
+                            <a href="javascript:;" class="list-group-item">
+                                <span class="badge">two days ago</span>
+                                <i class="fa fa-tasks"></i> 任务: "fix error on sales page"
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">交易面板</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>订单号</th>
+                                        <th>下单日期</th>
+                                        <th>下单时间</th>
+                                        <th>合计</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>3326</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:29 PM</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3325</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:20 PM</td>
+                                        <td>$234.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3324</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:03 PM</td>
+                                        <td>$724.17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3323</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:00 PM</td>
+                                        <td>$23.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3322</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:49 PM</td>
+                                        <td>$8345.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3321</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:23 PM</td>
+                                        <td>$245.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3320</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:15 PM</td>
+                                        <td>$5663.54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3319</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:13 PM</td>
+                                        <td>$943.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+
+<script src="https://magicbox.bkclouds.cc/static_api/v3/bk/js/bk.js"></script>
+
+<script src="./js/index.js"></script>
+
+
+</body>
+</html>
