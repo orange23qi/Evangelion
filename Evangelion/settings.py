@@ -131,8 +131,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #gitlab相关配置
 
-GIT_URL='http://gitlab.1dmy.com'
-GIT_PRIVATE_TOKEN='m-_z7wngsMAx-oi_T5q2'
+GIT_URL=''
+GIT_PRIVATE_TOKEN=''
 
 #inception组件所在的地址
 
